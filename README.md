@@ -11,4 +11,4 @@ JA FOSTE OH FILHO
 | 98197 | Rafael Amorim     |    rafael.amorim@ua.pt   |
 | 98595 | Tiago Alves       |        tiagojba9@ua.pt   |
 | 98388 | Diogo Fontes      |      diogofontes@ua.pt   |
-| 93310 | João Figueiredo   |   joaofigueiredo@ua.pt   |
+| 98506 |João Figueiredo    |       jrcidra@ua.pt      |
