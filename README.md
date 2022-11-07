@@ -9,6 +9,6 @@ JA FOSTE OH FILHO
 | NMEC  | Nome              |                   email  |
 | ----- | ----------------- | -----------------------: |
 | 98197 | Rafael Amorim     |    rafael.amorim@ua.pt   |
-| 98595 | Tiago Alves       |        tiagojba9@ua.pt   |
-| 98388 | Diogo Fontes      |      diogofontes@ua.pt   |
-| 98506 |João Figueiredo    |       jrcidra@ua.pt      |
+|104101 | Tiago Alves       |        tiagojba9@ua.pt   |
+| 98403 | Diogo Fontes      |     diogo.fontes@ua.pt   |
+| 98506 | João Figueiredo   |          jrcidra@ua.pt   |
