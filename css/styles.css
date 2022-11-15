@@ -12003,54 +12003,15 @@ body {
 }
 
 
-/* /////////////////////////////////////////////////// popup ///////////////////////////////////////////////////  */
-
-
-/* 
-/* #blur.active {
-  filter: blur(20px);
-  pointer-events: none;
-  user-select: none ;
-}
-
-#consultaPopup{
-  position: fixed;
-  top: 40%;
-  left: 50;
-  /* width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  display: none;
-  justify-content: center;
-  align-items: center; */
-
-transform: translate(-50%,
--50%);
-width: 500px;
-padding: 50px;
-box-shadow: 0 5px 30 px rgba(0,
-0,
-0,
-0.30);
-background: #fff;
-visibility: hidden;
-opacity: 0;
-transition: all 0.5s ease-in-out;
-
-}
-#consultaPopup.active {
-    top: 50%;
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
-}
-*/ */
 /* /////////////////////////////////////////////////// qlqr coisa ///////////////////////////////////////////////////  */
+
 body {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
+
 /* CSS Code */
+
 .popScroll {
     position: fixed;
     z-index: 10;
@@ -12060,6 +12021,7 @@ body {
     width: 100%;
     height: 100%;
 }
+
 .popup {
     z-index: 10;
     width: 450px;
@@ -12073,22 +12035,16 @@ body {
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     /* prevents bg color from leaking outside the border */
-    
     background-color: #fff;
     /* layer fill content */
-    
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .18);
     /* drop shadow */
-    
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .18);
     /* drop shadow */
-    
     -o-box-shadow: 0 0 10px rgba(0, 0, 0, .18);
     /* drop shadow */
-    
     box-shadow: 0 0 10px rgba(0, 0, 0, .18);
     /* drop shadow */
-    
     -webkit-transform-origin: top center;
     -moz-transform-origin: top center;
     -o-transform-origin: top center;
@@ -12098,6 +12054,7 @@ body {
     -moz-animation: iconosani 1.2s forwards;
     -o-animation: iconosani 1.2s forwards;
 }
+
 @-webkit-keyframes iconosani {
     0% {
         -webkit-transform: perspective(800px) rotateX(-90deg);
@@ -12105,20 +12062,17 @@ body {
         -o-transform: perspective(800px) rotateX(-90deg);
         opacity: 1;
     }
-    
     40% {
         -webkit-transform: perspective(800px) rotateX(30deg);
         -moz-transform: perspective(800px) rotateX(30deg);
         -o-transform: perspective(800px) rotateX(30deg);
         opacity: 1;
     }
-    
     70% {
         -webkit-transform: perspective(800px) rotateX(-10deg);
         -moz-transform: perspective(800px) rotateX(-10deg);
         -o-transform: perspective(800px) rotateX(-10deg);
     }
-    
     100% {
         -webkit-transform: perspective(800px) rotateX(0deg);
         -moz-transform: perspective(800px) rotateX(0deg);
@@ -12126,6 +12080,7 @@ body {
         opacity: 1;
     }
 }
+
 .popScroll h1 {
     height: 60px;
     position: relative;
@@ -12135,9 +12090,11 @@ body {
     text-transform: uppercase;
     background: #3D79D0;
 }
+
 .popScroll form {
     margin: 10px auto;
 }
+
 .subscribe-widget .email-form {
     font-size: 13px;
     color: #999999;
@@ -12147,6 +12104,7 @@ body {
     padding: 5px 0 5px 5px;
     line-height: 25px;
 }
+
 .subscribe-widget .button {
     background: #3D79D0;
     padding: 6px 15px;
@@ -12156,21 +12114,25 @@ body {
     margin-left: 0;
     cursor: pointer;
 }
+
 input[type="submit"] {
     -webkit-appearance: button;
     -moz-appearance: button;
     -o-appearance: button;
     cursor: pointer;
 }
+
 .popScroll p {
     padding: 1px 5px;
     font-family: 'Open Sans';
     font-size: 17px;
     margin-bottom: 10px;
 }
+
 #option {
     position: relative;
 }
+
 .boxi {
     display: inline-block;
     width: 169px;
@@ -12182,12 +12144,15 @@ input[type="submit"] {
     -moz-transition: all 0.1s linear;
     -o-transition: all 0.1s linear;
 }
+
 #home {
     background: #3D79D0;
 }
+
 #close {
     background: #D21111;
 }
+
 .popScroll em {
     width: 42px;
     display: inline-block;
@@ -12199,12 +12164,15 @@ input[type="submit"] {
     text-align: center;
     border-radius: 50px;
 }
+
 #home:hover {
     background: #1852C7;
 }
+
 #close:hover {
     background: #B30E0E;
 }
+
 body.overlay:after {
     content: '';
     width: 100%;
@@ -12220,13 +12188,14 @@ body.overlay:after {
     right: 0;
     background: #000;
 }
+
 body.overlay {
     /* Prevents scrolling */
-    
     overflow: hidden;
     max-height: 100%;
     max-width: 100%;
 }
+
 .ribbon {
     position: absolute;
     z-index: 100;
@@ -12234,10 +12203,12 @@ body.overlay {
     height: 100px;
     overflow: hidden;
 }
+
 .ribbon.top-left {
     top: -2.6px;
     left: -5px;
 }
+
 .ribbon.top-left.ribbon-primary>small {
     *zoom: 1;
     filter: progid: DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF428BCA', endColorstr='#FF2A6496');
@@ -12264,17 +12235,21 @@ body.overlay {
     top: 16px;
     left: -27px;
 }
+
 .ribbon.top-left.ribbon-primary>small:before,
 .ribbon.top-left.ribbon-primary>small:after {
     position: absolute;
     content: " ";
 }
+
 .ribbon.top-left.ribbon-primary>small:before {
     left: 0;
 }
+
 .ribbon.top-left.ribbon-primary>small:after {
     right: 0;
 }
+
 .ribbon.top-left.ribbon-primary>small:before,
 .ribbon.top-left.ribbon-primary>small:after {
     bottom: -3px;
@@ -12282,6 +12257,7 @@ body.overlay {
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
 }
+
 .banner {
     width: 300px;
     height: 250px;
@@ -12293,126 +12269,117 @@ body.overlay {
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     /* prevents bg color from leaking outside the border */
-    
     background-color: #fff;
     /* layer fill content */
-    
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .18);
     /* drop shadow */
-    
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .18);
     /* drop shadow */
-    
     box-shadow: 0 0 10px rgba(0, 0, 0, .18);
     /* drop shadow */
 }
+
 .adstext {
     margin-top: 20px;
     color: #000;
     position: relative;
 }
+
 @media screen and (max-width: 600px) {
     .popup {
         width: 370px;
         height: 480px;
     }
-    
     .popScroll h1 {
         height: 40px;
         font: 18px/40px sans-serif;
     }
-    
     .subscribe-widget .email-form {
         width: 210px;
     }
-    
     .adstext {
         margin-top: 20px;
     }
 }
+
 @media screen and (max-width: 400px) {
     .popup {
         width: 350px;
         height: 480px;
     }
-    
     .popScroll h1 {
         height: 40px;
         font: 18px/40px sans-serif;
     }
-    
     .subscribe-widget .email-form {
         width: 210px;
     }
-    
     .banner {
         margin: 10px auto;
     }
-    
     .adstext {
         margin-top: 20px;
     }
 }
+
 input.email-form:active,
 input.email-form:focus {
     -webkit-animation: fade 0.55s ease-in;
     -moz-animation: fade 0.55s ease-in;
     animation: fade 0.55s ease-in;
 }
+
 @-webkit-keyframes fade {
     0% {
         box-shadow: 0 0 0 0 transparent;
     }
-    
     66% {
         box-shadow: 0 0 0 10px #3D79D0, 0 0 0 12px white;
     }
-    
-    100% {
-        box-shadow: 0 0 0 20px transparent, 0 0 0 22px transparent;
-    }
-}
-@-moz-keyframes fade {
-    0% {
-        box-shadow: 0 0 0 0 transparent;
-    }
-    
-    66% {
-        box-shadow: 0 0 0 10px #3D79D0, 0 0 0 12px white;
-    }
-    
-    100% {
-        box-shadow: 0 0 0 20px transparent, 0 0 0 22px transparent;
-    }
-}
-@-o-keyframes fade {
-    0% {
-        box-shadow: 0 0 0 0 transparent;
-    }
-    
-    66% {
-        box-shadow: 0 0 0 10px #3D79D0, 0 0 0 12px white;
-    }
-    
-    100% {
-        box-shadow: 0 0 0 20px transparent, 0 0 0 22px transparent;
-    }
-}
-@keyframes fade {
-    0% {
-        box-shadow: 0 0 0 0 transparent;
-    }
-    
-    66% {
-        box-shadow: 0 0 0 10px #3D79D0, 0 0 0 12px white;
-    }
-    
     100% {
         box-shadow: 0 0 0 20px transparent, 0 0 0 22px transparent;
     }
 }
 
+@-moz-keyframes fade {
+    0% {
+        box-shadow: 0 0 0 0 transparent;
+    }
+    66% {
+        box-shadow: 0 0 0 10px #3D79D0, 0 0 0 12px white;
+    }
+    100% {
+        box-shadow: 0 0 0 20px transparent, 0 0 0 22px transparent;
+    }
+}
+
+@-o-keyframes fade {
+    0% {
+        box-shadow: 0 0 0 0 transparent;
+    }
+    66% {
+        box-shadow: 0 0 0 10px #3D79D0, 0 0 0 12px white;
+    }
+    100% {
+        box-shadow: 0 0 0 20px transparent, 0 0 0 22px transparent;
+    }
+}
+
+@keyframes fade {
+    0% {
+        box-shadow: 0 0 0 0 transparent;
+    }
+    66% {
+        box-shadow: 0 0 0 10px #3D79D0, 0 0 0 12px white;
+    }
+    100% {
+        box-shadow: 0 0 0 20px transparent, 0 0 0 22px transparent;
+    }
+}
+
+
 /* POPUP */
+
 #card {
     font-family: Georgia;
     background: #fff;
@@ -12429,63 +12396,78 @@ input.email-form:focus {
     box-shadow: -1px 1px 8px 5px rgba(0, 0, 0, 0.2), inset 0 0 30px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
 #card spa {
     color: #dc152c;
     font-weight: normal;
     font-size: 48px;
     margin-bottom: 10px;
 }
+
 #card spa::first-letter {
     color: #194ff7;
 }
+
 #card spa b {
     color: #f1840b;
     font-weight: normal;
 }
+
 #card spa b+b {
     color: #194ff7;
 }
+
 #card spa b+b+b {
     color: #00940e;
 }
+
 .content {
     text-align: left;
     /* Pure CSS3 typing animation with steps() :
        http://lea.verou.me/2011/09/pure-css3-typing-animation-with-steps/ */
 }
+
 .content ul {
     padding: 0;
     margin: 5px;
     font: 16px Arial;
 }
+
 .content ul li {
     list-style: none;
 }
+
 .content ul li a {
     color: #12C;
 }
+
 .content ul li span {
     display: block;
     width: 100%;
     margin-bottom: 2px;
 }
+
 .content ul li span:nth-child(2) {
     margin-bottom: 10px;
 }
+
 .content ul li span:nth-child(2) a {
     color: #093;
     text-decoration: none;
 }
+
 .content ul li span:nth-child(3),
 .content ul li span:nth-child(4) {
     font-size: 14px;
 }
+
 .content .text {
     border: 1px solid #7ec6fd;
     float: left;
     width: 100%;
     margin-bottom: 10px;
 }
+
 .content .text h2 {
     position: relative;
     float: left;
@@ -12494,6 +12476,7 @@ input.email-form:focus {
     padding: 0;
     margin: 5px 10px;
 }
+
 .content .text h2 span {
     position: absolute;
     top: 0;
@@ -12501,24 +12484,27 @@ input.email-form:focus {
     width: 0;
     background: white;
     /* same as background */
-    
     border-left: 0.1em solid black;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
+
 /*****************
   Section 
   ******************/
+
 section #ayudamos {
     height: 100%;
     text-align: center;
 }
+
 section #ayudamos h1 {
     padding-top: 17%;
     font-family: 'Vollkorn', serif;
     font-size: 48px;
 }
+
 section #ayudamos p {
     width: 500px;
     margin: 0px auto 32px;
@@ -12527,22 +12513,6 @@ section #ayudamos p {
     line-height: 1.35;
 }
 
-/* popup tentativa 2 */
-
-/* .conteudoPopup  {
-
-    width: 100%;
-    height: 100vh;
-    background: yellow;
-    position: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    display: none;
-
-  } */
-
-/* popup tentativa3 */
 .overlayAmorim {
     position: fixed;
     top: 0;
@@ -12554,25 +12524,28 @@ section #ayudamos p {
     visibility: hidden;
     opacity: 0;
 }
+
 .overlayAmorim:target {
     visibility: visible;
     opacity: 1;
     z-index: 9999;
 }
+
 .wrapperAmorim {
     margin: 70px auto;
     /* padding: 20px; */
-    
     background: #e7e7e7;
     border-radius: 5px;
     width: 50%;
     position: relative;
     transition: all 5s ease-in-out;
 }
+
 .wrapperAmorim h2 {
     margin-top: 0px;
     color: #333;
 }
+
 .wrapperAmorim .close {
     position: absolute;
     top: 20px;
@@ -12583,20 +12556,25 @@ section #ayudamos p {
     text-decoration: none;
     color: #333;
 }
+
 .wrapperAmorim .close:hover {
     color: #06D85F;
 }
+
 .wrapperAmorim .content {
     max-height: 30%;
     overflow: auto;
 }
 
+
 /*form*/
+
 .containerAmorim {
     left: 50%;
     border-radius: 5px;
     background-color: #e7e7e7;
 }
+
 .containerAmorim input[type=text],
 select,
 textarea {
@@ -12608,6 +12586,7 @@ textarea {
     margin-bottom: 16px;
     resize: vertical;
 }
+
 .containerAmorim input[type="submit"] {
     background-color: #413b3b;
     color: #fff;
@@ -12620,10 +12599,13 @@ textarea {
     letter-spacing: 3px;
 }
 
+
 /* contacto */
+
 #pieDepagina {
     background-color: #35363c;
 }
+
 #pieDepagina .soporte::before {
     content: "";
     position: absolute;
@@ -12633,20 +12615,24 @@ textarea {
     right: -100%;
     background-color: #00ad75;
 }
+
 @media (min-width: 768px) {
     #pieDepagina .soporte::before {
         right: 0;
         transform: skewX(25deg);
     }
 }
+
 #pieDepagina .enlaces p {
     margin-bottom: 0;
 }
+
 #pieDepagina .enlaces li {
     border-bottom: 1px solid #151519;
     box-shadow: 0 1px #8d8e93;
     padding-bottom: 0.6rem;
 }
+
 #pieDepagina .enlaces a {
     text-decoration: none;
     color: #fff;
