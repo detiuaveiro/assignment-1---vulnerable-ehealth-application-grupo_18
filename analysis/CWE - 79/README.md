@@ -10,4 +10,4 @@
 
 Conhecida como "Cross-site Scripting"(XSS), é um tipo de vulnerabilidade de segurança. Encontra-se normalmente em aplicações web, que permitem ataques maléficos ao injetaram "client-side scripts" dentro de páginas web, estas vistas por outros utilizadores.
 
-Através de XSS, o atacante injeta código javascript através de campos de texto presentes no site, por exemplo, comentários de num fórum.
+Através de XSS, o atacante injeta código javascript nos campos de texto presentes no site, por exemplo, comentários num fórum.

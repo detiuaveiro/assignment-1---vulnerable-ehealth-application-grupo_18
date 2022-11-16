@@ -11,7 +11,7 @@
 
 ## Descrição
 
-Este projeto foi realizado no âmbito da disciplina de Segurança Informáica e nas organizações, sendo o objetivo explorar vulnerabilidades e criar uma correção para as mesmas.
+Este projeto foi realizado no âmbito da disciplina de Segurança Informática e nas Organizações, sendo o objetivo explorar vulnerabilidades e criar uma correção para as mesmas.
 
 O projeto pretende representar uma página web de uma clínica de saúde, onde o  utilizador pode consultar informação acerca da mesma, contactar a clínica e fazer pedidos aos médicos.
 
@@ -19,7 +19,7 @@ Para representar e explorar as vulnerabilidades neste projeto, foram desenvolvid
 A aplicação vulnerável não possui qualquer mecanismo para prevenir as vulnerabilidades de serem exploradas, permitindo que o correto funcionamento da aplicação e privacidade de dados seja comprometida.
 Já a aplicação segura possui formas de prevenir a exploração dessas vulnerabilidades.
 
-Para o projeto, ambas as aplicações, foram desenvolvidas em python com recurso à framework FLASK.
+Para o projeto, ambas as aplicações, foram desenvolvidas em python com recurso à framework, FLASK.
 
 ## Vulnerabilidades
 

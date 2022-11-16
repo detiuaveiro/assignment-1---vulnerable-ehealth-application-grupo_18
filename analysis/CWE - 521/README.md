@@ -11,7 +11,6 @@ Esta será, talvez, a vulnerabilidade mais conhecida e aquela com a qual lidamos
 
 Em quase todas as plataformas, é comum vermos estas condições ou semelhantes:
 
-* Tamanho mínimo de caratéres
-* Incluir caratéures numéricos, alfabéticos e especiais
-* Dentro da gama de caratéres alfabéticos, incluir pelo menos uma letra maíscula e uma minúscula
-
+* Tamanho mínimo de caractéres
+* Incluir caractéres numéricos, alfabéticos e especiais
+* Dentro da gama de caractéres alfabéticos, incluir pelo menos uma letra maíscula e uma minúscula

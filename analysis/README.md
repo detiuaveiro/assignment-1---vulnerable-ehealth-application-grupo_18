@@ -13,10 +13,10 @@
 
 ## Introdução
 
-Este relatório tem como objetivo continuar a apresentação destas vulnerabilidades, explicá-las e demonstrá-las, tanto a serem esploradas, como também, uma solução que impede essa exploração.
-Para tal optámos por criar uma aplicação em python ,com recurso à framework, FLASK.
+Este relatório tem como objetivo continuar a apresentação destas vulnerabilidades, explicá-las e demonstrá-las, tanto a serem exploradas, como também, uma solução que impede essa exploração.
+Para tal optámos por criar uma aplicação em python, com recurso à framework, FLASK.
 
-A aplicação e site desenvolvidos tentam recriar o cenário de uma clínica de saúde, na qual é possível criar uma conta e aceder a um fórum. Esse, será o nosso ambiente para testar/demonstrar as vulnerabilidades
+A aplicação e site desenvolvidos tentam recriar o cenário de uma clínica de saúde, na qual é possível criar uma conta, aceder a um serviço de helpdesk e obter os seus resultados. Esse, será o nosso ambiente para testar/demonstrar as vulnerabilidades.
 
 
 
@@ -26,7 +26,7 @@ A aplicação e site desenvolvidos tentam recriar o cenário de uma clínica de 
 
 Partindo já da apresentação e explicação já fornecida da vulnerabilidade, iremos demonstrar o trabalho realizado para prevenir a sua exploração.
 
-A nossa aplicação insegura é vulnerável a XSS persistente, ou seja, um utilizador poderá inserir código javascript numa publicação, o qual ficará armazenado no website. Não só fica armazenado, como também é visível para outros utilizadores. Um desses outros utilizadores, ao abrir essa publicação, irá correr o script que contém conteúdo malicioso. Por exemplo, o script poderá rederecionar o utilizador para um link que contém vírus.
+A nossa aplicação insegura é vulnerável a XSS persistente, ou seja, um utilizador poderá inserir código javascript numa publicação, o qual ficará armazenado no website. Não só fica armazenado, como também é visível para outros utilizadores. Um desses outros utilizadores, ao abrir essa publicação, irá correr o script que contém conteúdo malicioso. Por exemplo, o script poderá redirecionar o utilizador para um link que contém vírus.
 
 ### Implementação
 
@@ -125,9 +125,9 @@ Se ações não forem tomadas e o passo 2 não tiver mecanismos de proteção, u
 ### Implementação
 
 
-Na nossa aplicação as SQL Injections são exploradas à volta do login. Na aplicação insegura, um utilizador poderá fazer login sem necessitar da password.
+Na nossa aplicação as SQL Injections são exploradas à volta do login. Na aplicação insegura, um atacante poderá fazer login sem necessitar da password.
 
-Simplesmente precisa de um email válido e adicionar "-- //" e o login será realizado com sucesso, sendo a password ignorada.
+Simplesmente precisa de um email válido e adicionar "'--//" e o login será realizado com sucesso, sendo a password ignorada.
 
 No código da aplicação insegura, não possuímos nada que verifique se num dado campo de texto existam caratéres que possam causar uma sql injection. 
 
@@ -160,7 +160,7 @@ def login():
 
 
 
-Já na aplicação segura, existem condições e código adicional para verificar esses dados cmapos de texto para evitar SQL Injections.
+Já na aplicação segura, existem condições e código adicional para verificar esses dados campos de texto para evitar SQL Injections.
 
 Aplicação segura:
 
@@ -209,7 +209,7 @@ def login():
 
 Uma vez que criámos uma aplicação e website que "atende" vários utilizadores, é importante respeitar a privacidade dos dados de cada um, criar um abiente no qual um utilizador X não acede aos dados do Utilizador Y.
 
-Sempre que uma conta é criada, esta é registada na base dados e associada a um id. Na aplicação insegura o url respetivo à página de um perfil contém o id dessa conta, logo um atacante pode aceder a contas de outros utilziadores alterando o id.
+Sempre que uma conta é criada, esta é registada na base dados e associada a um id. Na aplicação insegura o url respetivo à página de um perfil contém o id dessa conta, logo um atacante pode aceder a contas de outros utilizadores alterando o id.
 
 ![Foto_url_id](/SIO_proj1/analysis/images/url.png)
 
@@ -252,9 +252,7 @@ def profile():
 
 
 ## CWE-256:  Storing a password in plaintext may result in a system compromise
-
 ### [Definição e explicação ](/SIO_proj1/analysis/CWE%20-%20256/README.md)
-
 ### Exemplos
 
 
@@ -296,9 +294,9 @@ Na nossa aplicação, caso um utilizador se esqueça da password, é lhe possív
 ### Cenário de exemplo
 
 
-Vamos assumir que o utilizador X, possui uma conta registada com o seguinte email: "utilizadorx@gmail.com", mas esqueceu-se da password. O utilizador X pode pedir para alterar a password, fornecendo o seu email apenas e alterá-la. Conseguiu o que pretende e, talvez, nem se apercebeu do quão fácil é a outro utilizador roubar a sua conta.
+Vamos assumir que o utilizador X, possui uma conta registada com o seguinte email: "utilizadorx@gmail.com", mas esqueceu-se da password. O utilizador X pode pedir para alterar a password, fornecendo o seu email apenas e alterá-la. Conseguiu o que pretende e, talvez, nem se apercebeu do quão fácil é ao atacante roubar a sua conta.
 
-Para esse cenário imaginemos o utilizador Y. O utilizador Y, conhece o email do utilizador X, mas não a sua password. Realiza o processo de troca de password e, rápidamente, consegue aceder à sua conta e roubar dados.
+Para esse cenário imaginemos que o atacante conhece o email do utilizador X, mas não a sua password. Realiza o processo de troca de password e, rapidamente, consegue aceder à sua conta e roubar dados.
 
 ### Código desenvolvido
 
@@ -492,7 +490,7 @@ def publication(publication_id):
 
 ### [Definição e explicação ](/SIO_proj1/analysis/CWE%20-%20521/README.md)
 
-Já tendo sido dada uma explicação e definição, vamos ofercer algum contexto no porquê da necessidade de alguma exigência na criação de uma password.
+Já tendo sido dada uma explicação e definição, vamos oferecer algum contexto no porquê da necessidade de alguma exigência na criação de uma password.
 
 Primeiro, apresentaremos o top 10 de palavras-passes e o tempo que um hacker precisaria para a adivinhar.
 
@@ -511,7 +509,7 @@ Primeiro, apresentaremos o top 10 de palavras-passes e o tempo que um hacker pre
 
 [by nordpass](https://nordpass.com/most-common-passwords-list/)
 
-Como vemos, um atacante iria, rápidamente, ter a nossa palavra-passe. Teremos de ser mais exigentes nesta criação. Para avaliar o quão segura uma palavra-passe é, iremos utilizar o [passwordmonster](https://passwordmonster.com). 
+Como vemos, um atacante iria, rapidamente, ter a nossa palavra-passe. Teremos de ser mais exigentes nesta criação. Para avaliar o quão segura uma palavra-passe é, iremos utilizar o [passwordmonster](https://passwordmonster.com). 
 
 Vamos supor três palavra-passes, todas elas com o mesmo tamanho, 14 caratéres. A primeira palavra-passe terá caratéres numéricos e alfabéticos, as letras serão só minúsculas. A segunda palavra-passe terá caratéres alfabéticos, numéricos e especiais. A terceira palavra-passe terá as mesmas condições da anterior, mas também possuirá minúsculas e maiúsculas.
 
@@ -613,4 +611,4 @@ def reset_token(token):
 
 Com a realização deste trabalho, expandimos o conhecimento que possuíamos em vulnerabilidades. Partindo do que já tinha sido obtido nas aulas (principalmente as duas primeiras) e, através de pesquisa e realização de tarefas, complementámo-lo com mais ainda. 
 
-Não só aprendemos e adquirimos experiência com uma linguagem/framework ou acerca de detalhes de uma dada vulnerabilidade, mas também demos por nós a perguntar, "O que poderá um utilizador X fazer para comprometer a nossa aplicação ou a aceder a dados que lhe são privados?", ou seja, tivemos que pensar à frente para criar a app segura por forma a evitar os diferentes ataques.
+Não só aprendemos e adquirimos experiência com uma linguagem/framework ou acerca de detalhes de uma dada vulnerabilidade, mas também demos por nós a perguntar, "O que poderá um atacante fazer para comprometer a nossa aplicação ou a aceder a dados que lhe são privados?", ou seja, tivemos que pensar à frente para criar a app segura por forma a evitar os diferentes ataques.

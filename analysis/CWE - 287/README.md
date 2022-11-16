@@ -9,4 +9,4 @@
 
 Devido à má implementação ou falta de mecanismos de verificação, um atacante poderá fazer passar-se por outra pessoa. Esse atacante poderá obter dados dessa pessoa ou até alterá-los.
 
-A vulnerabilidade seŕa demonstrada no relatório
+A vulnerabilidade será demonstrada no relatório.

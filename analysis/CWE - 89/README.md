@@ -8,7 +8,7 @@
 
 ## Explicação
 
-Para ser possível desenvolver uma aplicação/website dinâmico com dados persistentes, temos de os armazenar nalgum lado. Para esse objetivo são usadas bases de dados, mas estas têm de ser protegidas de ataques, como "SQL injections". Caso contrário, um atacante poderá manipular intruções SQL com o objetivo comprometer a aplicação/ o website ou até aceder a dados, que lhe são privados.
+Para ser possível desenvolver uma aplicação/website dinâmico com dados persistentes, temos de os armazenar em algum lado. Para esse objetivo são usadas bases de dados, mas estas têm de ser protegidas de ataques, como "SQL injections". Caso contrário, um atacante poderá manipular intruções SQL com o objetivo comprometer a aplicação/ o website ou até aceder a dados, que lhe são privados.
 
 Isto levanta a questão, o que fazer para proteger a base de dados deste tipo de ataques? 
 
