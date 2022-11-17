@@ -22,7 +22,7 @@ A aplicação e site desenvolvidos tentam recriar o cenário de uma clínica de 
 
 ## CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
 
-### [Definição e explicação ](/SIO_proj1/analysis/CWE%20-%2079/README.md)
+### [Definição e explicação ](/analysis/CWE%20-%2079/README.md)
 
 Partindo já da apresentação e explicação já fornecida da vulnerabilidade, iremos demonstrar o trabalho realizado para prevenir a sua exploração.
 
@@ -104,7 +104,7 @@ Código da aplicação segura:
 ## CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
 
 
-### [Definição e explicação ](/SIO_proj1/analysis/CWE%20-%2089/README.md)
+### [Definição e explicação ](/analysis/CWE%20-%2089/README.md)
 
 
 Antes de passarmos à demonstração, teremos de compreender a forma como a comunicação é feita, como são enviados e recebidos dados, para podermos perceber como SQL injections podem acontecer.
@@ -205,13 +205,13 @@ def login():
 ## CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
 
 
-### [Definição e explicação ](/SIO_proj1/analysis/CWE%20-%20200/README.md)
+### [Definição e explicação ](/analysis/CWE%20-%20200/README.md)
 
 Uma vez que criámos uma aplicação e website que "atende" vários utilizadores, é importante respeitar a privacidade dos dados de cada um, criar um abiente no qual um utilizador X não acede aos dados do Utilizador Y.
 
 Sempre que uma conta é criada, esta é registada na base dados e associada a um id. Na aplicação insegura o url respetivo à página de um perfil contém o id dessa conta, logo um atacante pode aceder a contas de outros utilizadores alterando o id.
 
-![Foto_url_id](/SIO_proj1/analysis/images/url.png)
+![Foto_url_id](/analysis/images/url.png)
 
 ### Código desenvolvido
 
@@ -252,7 +252,7 @@ def profile():
 
 
 ## CWE-256:  Storing a password in plaintext may result in a system compromise
-### [Definição e explicação ](/SIO_proj1/analysis/CWE%20-%20256/README.md)
+### [Definição e explicação ](/analysis/CWE%20-%20256/README.md)
 ### Exemplos
 
 
@@ -284,7 +284,7 @@ db.session.add(new_user)
 
 ## CWE-287: Improper Authentication
 
-### [Definição e explicação ](/SIO_proj1/analysis/CWE%20-%20287/README.md)
+### [Definição e explicação ](/analysis/CWE%20-%20287/README.md)
 
 Se uma plataforma/website não tiver mecanismos de verificação de identidade, um atacante poderá dizer que é outra pessoa sem ter que o provar, um cenário que não é ideal. Para exemplificar em maior detalhe, iremos partir da nossa aplicação.
 
@@ -405,7 +405,7 @@ def reset_token(token):
 
 ## CWE-425: Direct Request ('Forced Browsing')
 
-### [Definição e explicação ](/SIO_proj1/analysis/CWE%20-%20425/README.md)
+### [Definição e explicação ](/analysis/CWE%20-%20425/README.md)
 
 
 Em quase todas as plataformas atuais, existe sempre conteúdo público e privado. Esse conteúdo público, por norma é acessível por qualquer pessoa, sem necessidade de autenticação, já o privado é o contrário. 
@@ -488,7 +488,7 @@ def publication(publication_id):
 
 ## CWE-521: Weak Password Requirements
 
-### [Definição e explicação ](/SIO_proj1/analysis/CWE%20-%20521/README.md)
+### [Definição e explicação ](/analysis/CWE%20-%20521/README.md)
 
 Já tendo sido dada uma explicação e definição, vamos oferecer algum contexto no porquê da necessidade de alguma exigência na criação de uma password.
 
